@@ -78,7 +78,7 @@ cd backend
 uvicorn main:app --host 0.0.0.0 --port 8011
 ```
 
-**启动前端**（：
+**启动前端**：
 
 ```bash
 # 新开一个终端，在项目根目录
@@ -122,7 +122,7 @@ VITE_API_URL=http://localhost:8011/api
 ├── backend/
 │   ├── config/
 │   │   ├── domain_strategies.json   # 5个领域的字段映射 + 图表配置
-│   │   ├── fill_strategies.json     # 各领域的缺失值填充策略
+│   │   ├── fill_strategies.json     # 各领域的缺失值填充策略（可供修改更新）
 │   │   └── semantic_patterns.json   # 35+ 种语义类型的正则检测
 │   ├── models/
 │   │   └── schemas.py               # Pydantic 数据模型
@@ -135,7 +135,7 @@ VITE_API_URL=http://localhost:8011/api
 │   │   ├── code_executor.py         # AI 代码沙箱执行
 │   │   ├── data_loader.py           # 文件解析
 │   │   └── data_processor.py        # 旧版处理管道（兼容）
-│   ├── main.py                      # FastAPI 入口（24 个端点）
+│   ├── main.py                      # FastAPI 入口
 │   └── requirements.txt
 ├── src/
 │   ├── components/
