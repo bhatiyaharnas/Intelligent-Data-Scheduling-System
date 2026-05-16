@@ -1,0 +1,790 @@
+{
+  "general": {
+    "name": "通用数据填充策略",
+    "description": "未指定领域的默认填充规则，按字段语义类型自动匹配",
+    "rules": {
+      "date": {
+        "method": "mode",
+        "description": "日期列前向填充，保持时间连续性",
+        "fallback": ""
+      },
+      "order_date": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "payment_time": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "submit_time": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "ship_date": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "delivery_date": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "region": {
+        "method": "mode",
+        "fallback": "未知",
+        "description": "地区/地址用最常见值填充，无数据填'未知'"
+      },
+      "city": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "country": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "destination": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "category": {
+        "method": "mode",
+        "fallback": "其他"
+      },
+      "industry": {
+        "method": "mode",
+        "fallback": "其他"
+      },
+      "segment": {
+        "method": "mode",
+        "fallback": "未分类"
+      },
+      "name": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "product_name": {
+        "method": "mode",
+        "fallback": "未知商品"
+      },
+      "department": {
+        "method": "mode",
+        "fallback": "未分配"
+      },
+      "channel": {
+        "method": "mode",
+        "fallback": "其他"
+      },
+      "traffic_source": {
+        "method": "mode",
+        "fallback": "其他"
+      },
+      "status": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "delivery_status": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "gender": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "blood_type": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "age": {
+        "method": "median",
+        "fallback": 0
+      },
+      "amount": {
+        "method": "median",
+        "fallback": 0
+      },
+      "sales": {
+        "method": "median",
+        "fallback": 0
+      },
+      "total_amount": {
+        "method": "median",
+        "fallback": 0
+      },
+      "profit": {
+        "method": "median",
+        "fallback": 0
+      },
+      "discount": {
+        "method": "median",
+        "fallback": 0
+      },
+      "cost": {
+        "method": "median",
+        "fallback": 0
+      },
+      "tax": {
+        "method": "median",
+        "fallback": 0
+      },
+      "fee": {
+        "method": "median",
+        "fallback": 0
+      },
+      "exchange_rate": {
+        "method": "median",
+        "fallback": 1.0
+      },
+      "unit_price": {
+        "method": "median",
+        "fallback": 0
+      },
+      "quantity": {
+        "method": "median",
+        "fallback": 0
+      },
+      "items_purchased": {
+        "method": "median",
+        "fallback": 0
+      },
+      "stock": {
+        "method": "median",
+        "fallback": 0
+      },
+      "satisfaction_level": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "average_rating": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "days_since_last_purchase": {
+        "method": "median",
+        "fallback": 999
+      },
+      "delivery_days": {
+        "method": "median",
+        "fallback": 0
+      },
+      "delay_days": {
+        "method": "median",
+        "fallback": 0
+      },
+      "return_rate": {
+        "method": "median",
+        "fallback": 0
+      },
+      "conversion_rate": {
+        "method": "median",
+        "fallback": 0
+      },
+      "cart_abandon_rate": {
+        "method": "median",
+        "fallback": 0
+      },
+      "click_count": {
+        "method": "median",
+        "fallback": 0
+      },
+      "session_count": {
+        "method": "median",
+        "fallback": 0
+      },
+      "membership_type": {
+        "method": "mode",
+        "fallback": "普通会员"
+      },
+      "currency_type": {
+        "method": "mode",
+        "fallback": "CNY"
+      },
+      "payment_method": {
+        "method": "mode",
+        "fallback": "其他"
+      },
+      "shipping_method": {
+        "method": "mode",
+        "fallback": "其他"
+      },
+      "device_type": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "description": {
+        "method": "specific",
+        "value": ""
+      },
+      "account": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "email": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "phone": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "customer_id": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "order_id": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "tracking_number": {
+        "method": "mode",
+        "fallback": ""
+      }
+    }
+  },
+  "finance": {
+    "name": "金融财务填充策略",
+    "description": "企业财务数据专用填充规则，数字类用中位数保持分布，状态类保留空值等待人工确认",
+    "rules": {
+      "date": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "submit_time": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "payment_time": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "order_date": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "account": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "category": {
+        "method": "mode",
+        "fallback": "其他"
+      },
+      "department": {
+        "method": "mode",
+        "fallback": "未分配"
+      },
+      "description": {
+        "method": "specific",
+        "value": ""
+      },
+      "amount": {
+        "method": "median",
+        "fallback": 0
+      },
+      "sales": {
+        "method": "median",
+        "fallback": 0
+      },
+      "profit": {
+        "method": "median",
+        "fallback": 0
+      },
+      "cost": {
+        "method": "median",
+        "fallback": 0
+      },
+      "discount": {
+        "method": "median",
+        "fallback": 0
+      },
+      "tax": {
+        "method": "median",
+        "fallback": 0
+      },
+      "fee": {
+        "method": "median",
+        "fallback": 0
+      },
+      "exchange_rate": {
+        "method": "median",
+        "fallback": 1.0
+      },
+      "fiscal_year": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "fiscal_quarter": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "budget": {
+        "method": "median",
+        "fallback": 0
+      },
+      "forecast": {
+        "method": "median",
+        "fallback": 0
+      },
+      "variance": {
+        "method": "specific",
+        "value": 0,
+        "description": "无差异值为0"
+      },
+      "debit": {
+        "method": "median",
+        "fallback": 0
+      },
+      "credit": {
+        "method": "median",
+        "fallback": 0
+      },
+      "balance": {
+        "method": "median",
+        "fallback": 0
+      },
+      "reconciliation_status": {
+        "method": "mode",
+        "fallback": "未对账"
+      },
+      "approval_status": {
+        "method": "mode",
+        "fallback": "待审批"
+      },
+      "audit_flag": {
+        "method": "mode",
+        "fallback": "未审计"
+      },
+      "region": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "channel": {
+        "method": "mode",
+        "fallback": "其他"
+      },
+      "customer_id": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "order_id": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "currency_type": {
+        "method": "mode",
+        "fallback": "CNY"
+      }
+    }
+  },
+  "ecommerce": {
+    "name": "电商零售填充策略",
+    "description": "电商订单与客户行为数据填充规则，核心指标用中位数，分类属性用众数",
+    "rules": {
+      "date": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "order_date": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "payment_time": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "ship_date": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "delivery_date": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "region": {
+        "method": "mode",
+        "fallback": "未知地区"
+      },
+      "category": {
+        "method": "mode",
+        "fallback": "未分类"
+      },
+      "channel": {
+        "method": "mode",
+        "fallback": "其他渠道"
+      },
+      "name": {
+        "method": "mode",
+        "fallback": "未知商品"
+      },
+      "amount": {
+        "method": "median",
+        "fallback": 0
+      },
+      "total_amount": {
+        "method": "median",
+        "fallback": 0
+      },
+      "sales": {
+        "method": "median",
+        "fallback": 0
+      },
+      "profit": {
+        "method": "median",
+        "fallback": 0
+      },
+      "discount": {
+        "method": "median",
+        "fallback": 0,
+        "description": "折扣金额缺失可能是无折扣，填0"
+      },
+      "cost": {
+        "method": "median",
+        "fallback": 0
+      },
+      "unit_price": {
+        "method": "median",
+        "fallback": 0
+      },
+      "quantity": {
+        "method": "median",
+        "fallback": 0
+      },
+      "items_purchased": {
+        "method": "median",
+        "fallback": 0
+      },
+      "customer_id": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "membership_type": {
+        "method": "mode",
+        "fallback": "普通会员"
+      },
+      "satisfaction_level": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "average_rating": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "days_since_last_purchase": {
+        "method": "median",
+        "fallback": 999,
+        "description": "无记录可能是新客户或流失已久"
+      },
+      "return_rate": {
+        "method": "median",
+        "fallback": 0
+      },
+      "order_id": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "payment_method": {
+        "method": "mode",
+        "fallback": "其他"
+      },
+      "shipping_method": {
+        "method": "mode",
+        "fallback": "其他"
+      },
+      "stock": {
+        "method": "median",
+        "fallback": 0
+      },
+      "tax": {
+        "method": "median",
+        "fallback": 0
+      },
+      "click_count": {
+        "method": "median",
+        "fallback": 0
+      },
+      "conversion_rate": {
+        "method": "median",
+        "fallback": 0
+      },
+      "traffic_source": {
+        "method": "mode",
+        "fallback": "其他"
+      },
+      "device_type": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "session_count": {
+        "method": "median",
+        "fallback": 0
+      },
+      "cart_abandon_rate": {
+        "method": "median",
+        "fallback": 0
+      },
+      "gender": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "age": {
+        "method": "median",
+        "fallback": 0
+      }
+    }
+  },
+  "logistics": {
+    "name": "物流运输填充策略",
+    "description": "物流运单与运输数据填充规则，成本类用中位数，时效类保守填0",
+    "rules": {
+      "date": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "ship_date": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "delivery_date": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "order_date": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "ship_time": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "arrival_time": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "region": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "destination": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "name": {
+        "method": "mode",
+        "fallback": "其他"
+      },
+      "status": {
+        "method": "mode",
+        "fallback": "未知状态"
+      },
+      "amount": {
+        "method": "median",
+        "fallback": 0
+      },
+      "cost": {
+        "method": "median",
+        "fallback": 0
+      },
+      "quantity": {
+        "method": "median",
+        "fallback": 0
+      },
+      "delivery_days": {
+        "method": "median",
+        "fallback": 0
+      },
+      "fuel_cost": {
+        "method": "median",
+        "fallback": 0
+      },
+      "toll_cost": {
+        "method": "median",
+        "fallback": 0
+      },
+      "labor_cost": {
+        "method": "median",
+        "fallback": 0
+      },
+      "cargo_volume": {
+        "method": "median",
+        "fallback": 0
+      },
+      "delay_days": {
+        "method": "specific",
+        "value": 0,
+        "description": "无延误信息默认0天延误"
+      },
+      "delivery_status": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "tracking_number": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "order_id": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "customer_id": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "vehicle_id": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "driver_id": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "temperature": {
+        "method": "median",
+        "fallback": 0
+      },
+      "humidity": {
+        "method": "median",
+        "fallback": 0
+      },
+      "warehouse": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "route_id": {
+        "method": "mode",
+        "fallback": ""
+      }
+    }
+  },
+  "healthcare": {
+    "name": "医疗健康填充策略",
+    "description": "患者就诊与诊疗数据填充规则，生命体征用中位数，诊断类用众数",
+    "rules": {
+      "date": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "admission_date": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "discharge_date": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "appointment_date": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "follow_up_date": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "surgery_date": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "age": {
+        "method": "median",
+        "fallback": 0
+      },
+      "gender": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "name": {
+        "method": "mode",
+        "fallback": "其他诊断"
+      },
+      "department": {
+        "method": "mode",
+        "fallback": "其他科室"
+      },
+      "cost": {
+        "method": "median",
+        "fallback": 0
+      },
+      "quantity": {
+        "method": "median",
+        "fallback": 0
+      },
+      "patient_id": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "diagnosis_code": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "medication": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "dosage": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "frequency": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "doctor": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "nurse": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "room": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "bed": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "insurance": {
+        "method": "mode",
+        "fallback": "自费",
+        "description": "保险类型缺失默认为自费"
+      },
+      "blood_type": {
+        "method": "mode",
+        "fallback": "未知"
+      },
+      "height": {
+        "method": "median",
+        "fallback": 0,
+        "description": "身高缺失填中位数"
+      },
+      "weight": {
+        "method": "median",
+        "fallback": 0
+      },
+      "bmi": {
+        "method": "median",
+        "fallback": 0
+      },
+      "blood_pressure": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "heart_rate": {
+        "method": "median",
+        "fallback": 0
+      },
+      "temperature": {
+        "method": "median",
+        "fallback": 0,
+        "description": "体温缺失填中位数"
+      },
+      "lab_result": {
+        "method": "mode",
+        "fallback": ""
+      },
+      "readmission_flag": {
+        "method": "mode",
+        "fallback": "否",
+        "description": "再入院标志缺失默认为否"
+      }
+    }
+  }
+}

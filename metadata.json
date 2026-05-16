@@ -1,0 +1,6 @@
+{
+  "name": "Intelligent Data Dispatch Engine",
+  "description": "Data governance, causal attribution, and anomaly detection layer utilizing LLM-driven intelligence, cross-sectional ranking and LSTM thresholds.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

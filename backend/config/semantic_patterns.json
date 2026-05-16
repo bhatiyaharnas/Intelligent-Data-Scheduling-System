@@ -1,0 +1,223 @@
+{
+  "patterns": {
+    "email": {
+      "regex": "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*\\.[a-zA-Z]{2,}$",
+      "confidence": 0.95,
+      "description": "电子邮件地址"
+    },
+    "phone_cn_mobile": {
+      "regex": "^1[3-9]\\d{9}$",
+      "confidence": 0.92,
+      "description": "中国大陆手机号（11位，1开头）"
+    },
+    "phone_cn_landline": {
+      "regex": "^(0\\d{2,3}-?\\d{7,8}(-\\d{1,6})?)$",
+      "confidence": 0.88,
+      "description": "中国大陆座机号（区号+号码）"
+    },
+    "phone_general": {
+      "regex": "^(\\+?\\d{1,4}[\\s-]?)?(\\(?\\d{2,4}\\)?[\\s-]?)?\\d{6,12}$",
+      "confidence": 0.78,
+      "description": "国际通用电话号码格式"
+    },
+    "url": {
+      "regex": "^https?://[^\\s/$.?#].[^\\s]*$",
+      "confidence": 0.93,
+      "description": "HTTP/HTTPS URL"
+    },
+    "currency_rmb": {
+      "regex": "^[¥￥]\\s*-?\\d+(,\\d{3})*(\\.\\d{1,2})?$|^-?\\d+(,\\d{3})*(\\.\\d{1,2})?\\s*[元]$",
+      "confidence": 0.90,
+      "description": "人民币金额（¥符号或元结尾）"
+    },
+    "currency_usd": {
+      "regex": "^\\$\\s*-?\\d+(,\\d{3})*(\\.\\d{1,2})?$",
+      "confidence": 0.90,
+      "description": "美元金额"
+    },
+    "currency_eur": {
+      "regex": "^[€]\\s*-?\\d+(,\\d{3})*(\\.\\d{1,2})?$",
+      "confidence": 0.90,
+      "description": "欧元金额"
+    },
+    "currency_general": {
+      "regex": "^[¥$€£￥]\\s*-?\\d+(,\\d{3})*(\\.\\d{1,2})?$|^-?\\d+(,\\d{3})*(\\.\\d{1,2})?\\s*[元美元欧元英镑]$",
+      "confidence": 0.82,
+      "description": "通用货币格式"
+    },
+    "percentage": {
+      "regex": "^-?\\d+(\\.\\d+)?\\s*%$|^-?0\\.\\d+$|^-?\\d+(\\.\\d+)?\\s*百分比$",
+      "confidence": 0.88,
+      "description": "百分比"
+    },
+    "number_with_separator": {
+      "regex": "^-?\\d{1,3}(,\\d{3})+(\\.\\d+)?$",
+      "confidence": 0.85,
+      "description": "带千位分隔符的数字"
+    },
+    "zip_cn": {
+      "regex": "^\\d{6}$",
+      "confidence": 0.82,
+      "description": "中国邮政编码（6位数字）"
+    },
+    "ip_address_v4": {
+      "regex": "^(?:(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d\\d?)$",
+      "confidence": 0.93,
+      "description": "IPv4 地址"
+    },
+    "date_iso": {
+      "regex": "^\\d{4}-\\d{2}-\\d{2}$",
+      "confidence": 0.92,
+      "description": "ISO 日期格式（YYYY-MM-DD）"
+    },
+    "date_slash": {
+      "regex": "^\\d{4}/\\d{1,2}/\\d{1,2}$|^\\d{1,2}/\\d{1,2}/\\d{4}$",
+      "confidence": 0.90,
+      "description": "斜杠分隔日期"
+    },
+    "date_dot": {
+      "regex": "^\\d{4}\\.\\d{1,2}\\.\\d{1,2}$|^\\d{1,2}\\.\\d{1,2}\\.\\d{4}$",
+      "confidence": 0.88,
+      "description": "点分隔日期"
+    },
+    "date_cn": {
+      "regex": "^\\d{4}年\\d{1,2}月\\d{1,2}日$",
+      "confidence": 0.92,
+      "description": "中文日期格式"
+    },
+    "datetime_iso": {
+      "regex": "^\\d{4}-\\d{2}-\\d{2}[T ]\\d{2}:\\d{2}:\\d{2}",
+      "confidence": 0.93,
+      "description": "ISO 日期时间格式"
+    },
+    "time_hhmm": {
+      "regex": "^([01]?\\d|2[0-3]):[0-5]\\d(:[0-5]\\d)?$",
+      "confidence": 0.90,
+      "description": "时间格式（HH:MM或HH:MM:SS）"
+    },
+    "boolean_en": {
+      "regex": "^(true|false|yes|no|y|n|t|f)$",
+      "confidence": 0.90,
+      "description": "英文布尔值"
+    },
+    "boolean_cn": {
+      "regex": "^(是|否|对|错|有|无|真|假)$",
+      "confidence": 0.90,
+      "description": "中文布尔值"
+    },
+    "boolean_numeric": {
+      "regex": "^[01]$",
+      "confidence": 0.70,
+      "description": "数值布尔（0/1）"
+    },
+    "uuid": {
+      "regex": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
+      "confidence": 0.95,
+      "description": "UUID 标准格式"
+    },
+    "id_number_cn": {
+      "regex": "^[1-9]\\d{5}(19|20)\\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\\d|3[01])\\d{3}[\\dXx]$",
+      "confidence": 0.90,
+      "description": "中国大陆18位身份证号"
+    },
+    "unified_social_credit_code": {
+      "regex": "^[1-9A-HJ-NP-RT-Y]\\d{14}[A-Z\\d]{3}$",
+      "confidence": 0.88,
+      "description": "统一社会信用代码（18位）"
+    },
+    "bank_card_number": {
+      "regex": "^\\d{16,19}$",
+      "confidence": 0.75,
+      "description": "银行卡号（16-19位数字）"
+    },
+    "gender_label": {
+      "regex": "^(男|女|男性|女性|male|female|M|F)$",
+      "confidence": 0.88,
+      "description": "性别标签"
+    },
+    "province_cn": {
+      "regex": "^(北京市?|天津市?|上海市?|重庆市?|河北省?|山西省?|辽宁省?|吉林省?|黑龙江省?|江苏省?|浙江省?|安徽省?|福建省?|江西省?|山东省?|河南省?|湖北省?|湖南省?|广东省?|广西壮族自治区|广西省?|海南省?|四川省?|贵州省?|云南省?|西藏自治区|西藏省?|陕西省?|甘肃省?|青海省?|宁夏回族自治区|宁夏省?|新疆维吾尔自治区|新疆省?|内蒙古自治区|内蒙古省?|香港特别行政区|香港|澳门特别行政区|澳门|台湾省?|台北市?|高雄市?|杭州市?|苏州市?|成都市?|深圳市?|广州市?|武汉市?|南京市?|西安市?|东莞市?|佛山市?|宁波市?|青岛市?|厦门市?|郑州市?|长沙市?|合肥市?|无锡市?|大连市?|济南市?|沈阳市?|福州市?|石家庄市?|哈尔滨市?|长春市?|昆明市?|南昌市?|南宁市?|贵阳市?|兰州市?|呼和浩特市?|乌鲁木齐市?|银川市?|西宁市?|温州市?|珠海市?|中山市?|惠州市?|泉州市?|烟台市?|嘉兴市?|绍兴市?|金华市?|潍坊市?|淄博市?|洛阳市?|唐山市?)$",
+      "confidence": 0.85,
+      "description": "中国省市名称"
+    },
+    "color_hex": {
+      "regex": "^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$",
+      "confidence": 0.92,
+      "description": "十六进制颜色值"
+    },
+    "longitude": {
+      "regex": "^-?(1[0-7]\\d|[1-9]?\\d)(\\.\\d+)?$",
+      "confidence": 0.70,
+      "description": "经度（-180~180）",
+      "value_range": [-180, 180],
+      "require_column_keyword": true,
+      "column_keywords": ["经度", "longitude", "lng", "lon", "经", "坐标x", "x坐标"]
+    },
+    "latitude": {
+      "regex": "^-?([1-8]?\\d)(\\.\\d+)?$",
+      "confidence": 0.70,
+      "description": "纬度（-90~90）",
+      "value_range": [-90, 90],
+      "require_column_keyword": true,
+      "column_keywords": ["纬度", "latitude", "lat", "纬", "坐标y", "y坐标"]
+    },
+    "rating_1_5": {
+      "regex": "^[1-5](\\.\\d)?$",
+      "confidence": 0.85,
+      "description": "1-5分评分",
+      "value_range": [1, 5],
+      "require_column_keyword": true,
+      "column_keywords": ["评分", "rating", "满意度", "满意", "得分", "评价", "评", "score", "satisfaction", "average_rating", "avg_rating"]
+    },
+    "rating_1_10": {
+      "regex": "^(10|[1-9])(\\.\\d)?$",
+      "confidence": 0.82,
+      "description": "1-10分评分",
+      "value_range": [1, 10],
+      "require_column_keyword": true,
+      "column_keywords": ["评分", "rating", "满意度", "满意", "得分", "评价", "评", "score", "satisfaction"]
+    },
+    "rating_1_100": {
+      "regex": "^(100|[1-9]\\d?)(\\.\\d)?$",
+      "confidence": 0.75,
+      "description": "百分制评分",
+      "value_range": [1, 100],
+      "require_column_keyword": true,
+      "column_keywords": ["评分", "rating", "满意度", "满意", "得分", "评价", "评", "score", "satisfaction", "dSR"]
+    }
+  },
+  "column_name_keywords": {
+    "email": ["email", "邮箱", "邮件", "e-mail", "mail", "电子邮箱", "电邮"],
+    "phone": ["phone", "电话", "手机", "mobile", "tel", "telephone", "手机号", "联系电话", "联系方式", "传真", "fax"],
+    "url": ["url", "网址", "链接", "link", "website", "网站", "官网", "域名", "domain"],
+    "currency": ["金额", "费用", "价格", "收入", "支出", "花费", "消费", "销售额", "营业额", "流水", "单价", "售价", "amount", "cost", "price", "value", "total", "money", "fee", "revenue", "payment", "元", "￥", "$", "€", "£", "sales", "profit", "discount", "利润", "折扣", "销售收入", "spend", "spent", "花费", "开销"],
+    "percentage": ["百分比", "占比", "比率", "rate", "percent", "percentage", "pct", "利率", "增长率", "完成率", "%", "转化率", "退货率", "放弃率"],
+    "date": ["日期", "时间", "date", "time", "datetime", "timestamp", "日", "月", "年", "创建时间", "更新时间", "下单时间", "付款时间", "下单日期", "支付时间", "提交时间", "发货日期", "ship_date", "ship", "payment_time", "submit_time", "order_date", "录入时间", "登记时间", "制单时间"],
+    "id": ["id", "编号", "代码", "code", "账号", "账户", "account", "no", "号码", "序号", "主键", "唯一标识"],
+    "name": ["名称", "名字", "商品", "产品", "标题", "name", "product", "title", "物品", "客户名", "用户名", "商品名称", "药品", "承运商"],
+    "region": ["地区", "区域", "省份", "城市", "国家", "地点", "地址", "位置", "region", "city", "country", "province", "state", "location", "address", "省", "市", "区", "县", "收货", "发货", "始发", "目的", "仓库"],
+    "gender": ["性别", "gender", "sex", "男", "女"],
+    "age": ["年龄", "周岁", "岁数", "age", "出生日期", "生日", "birthday", "birth"],
+    "quantity": ["数量", "件数", "销量", "个数", "笔数", "人次", "频次", "次数", "quantity", "qty", "count", "num", "人数", "单数", "张数", "台数"],
+    "membership": ["会员", "vip", "member", "等级", "level", "tier", "membership", "客户等级", "用户等级", "VIP等级", "会员卡"],
+    "satisfaction": ["满意度", "满意", "评分", "rating", "satisfaction", "评价", "服务评分", "客户评分", "满意度分", "得分", "均分"],
+    "profit": ["利润", "盈利", "收益", "profit", "net_profit", "gross_profit", "盈余", "毛利", "净利润", "毛利润"],
+    "discount": ["折扣", "优惠", "减免", "discount", "coupon", "让利", "折让", "折扣率", "折扣价"],
+    "tax": ["税", "tax", "vat", "增值税", "营业税", "所得税", "消费税"],
+    "stock": ["库存", "存货", "stock", "inventory", "存量", "库存量"],
+    "patient": ["患者", "病人", "patient", "病历", "住院", "门诊"],
+    "logistics": ["物流", "运输", "配送", "快递", "发货", "送达", "承运", "运单", "ship", "deliver", "freight", "logistics"],
+    "payment": ["支付", "付款", "结算", "payment", "pay", "付", "收款", "到账"]
+  },
+  "type_detection_rules": {
+    "date_column_threshold": 0.6,
+    "numeric_column_threshold": 0.8,
+    "semantic_sample_size": 1000,
+    "semantic_min_match_rate": 0.5,
+    "high_cardinality_threshold": 0.9,
+    "low_cardinality_threshold": 0.1,
+    "constant_threshold": 1,
+    "suspicious_null_ratio": 0.5,
+    "suspicious_unique_ratio": 0.001
+  }
+}

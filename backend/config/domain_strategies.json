@@ -1,0 +1,2459 @@
+{
+  "domains": {
+    "general": {
+      "name": "通用数据",
+      "description": "通用领域，覆盖人财物事四大类核心字段",
+      "field_mappings": {
+        "date": [
+          "日期",
+          "时间",
+          "date",
+          "time",
+          "datetime",
+          "timestamp",
+          "年",
+          "月",
+          "日",
+          "year",
+          "month",
+          "day",
+          "period"
+        ],
+        "order_date": [
+          "下单日期",
+          "订购日期",
+          "订单日期",
+          "下单时间",
+          "order_date",
+          "order_time",
+          "ord_date",
+          "购买日期",
+          "交易日期"
+        ],
+        "payment_time": [
+          "支付时间",
+          "付款时间",
+          "付款日期",
+          "payment_time",
+          "pay_time",
+          "paid_at",
+          "payment_date",
+          "交易时间",
+          "结算时间"
+        ],
+        "submit_time": [
+          "提交时间",
+          "申请时间",
+          "申报时间",
+          "submit_time",
+          "submitted_at",
+          "created_at",
+          "创建时间",
+          "录入时间"
+        ],
+        "ship_date": [
+          "发货日期",
+          "发运日期",
+          "发货时间",
+          "出库日期",
+          "ship_date",
+          "shipped_at",
+          "shipping_date",
+          "delivery_date",
+          "送达日期"
+        ],
+        "region": [
+          "地区",
+          "区域",
+          "省份",
+          "城市",
+          "国家",
+          "地点",
+          "地址",
+          "位置",
+          "region",
+          "city",
+          "country",
+          "province",
+          "state",
+          "location",
+          "address",
+          "省",
+          "市",
+          "区",
+          "县",
+          "收货地",
+          "发货地",
+          "目的地"
+        ],
+        "category": [
+          "分类",
+          "类别",
+          "类型",
+          "科目",
+          "项目",
+          "category",
+          "type",
+          "group",
+          "种类",
+          "品类",
+          "类目",
+          "行业",
+          "领域"
+        ],
+        "name": [
+          "名称",
+          "名字",
+          "商品",
+          "产品",
+          "标题",
+          "name",
+          "product",
+          "title",
+          "物品",
+          "客户名",
+          "用户名",
+          "姓名"
+        ],
+        "department": [
+          "部门",
+          "科室",
+          "单位",
+          "机构",
+          "组织",
+          "department",
+          "dept",
+          "事业部",
+          "成本中心",
+          "小组",
+          "团队",
+          "team"
+        ],
+        "channel": [
+          "渠道",
+          "来源",
+          "平台",
+          "途径",
+          "方式",
+          "channel",
+          "source",
+          "入口",
+          "流量来源",
+          "管道"
+        ],
+        "status": [
+          "状态",
+          "进展",
+          "情况",
+          "是否",
+          "status",
+          "结果",
+          "标志",
+          "flag",
+          "当前状态"
+        ],
+        "gender": [
+          "性别",
+          "gender",
+          "sex",
+          "男",
+          "女",
+          "称谓"
+        ],
+        "age": [
+          "年龄",
+          "周岁",
+          "岁数",
+          "age",
+          "出生年份",
+          "岁",
+          "年纪"
+        ],
+        "amount": [
+          "金额",
+          "费用",
+          "价格",
+          "收入",
+          "支出",
+          "花费",
+          "消费",
+          "amount",
+          "cost",
+          "price",
+          "value",
+          "total",
+          "预算",
+          "报销"
+        ],
+        "sales": [
+          "销售额",
+          "销售收入",
+          "销售金额",
+          "总销售",
+          "sales",
+          "revenue",
+          "营业额",
+          "营收",
+          "营业收入",
+          "卖额",
+          "total_sales"
+        ],
+        "total_amount": [
+          "总金额",
+          "订单金额",
+          "实付金额",
+          "成交金额",
+          "合计",
+          "total_amount",
+          "total",
+          "sum_amount",
+          "应付",
+          "总价"
+        ],
+        "profit": [
+          "利润",
+          "净利润",
+          "毛利润",
+          "盈利",
+          "profit",
+          "net_profit",
+          "gross_profit",
+          "盈余",
+          "收益",
+          "净收入"
+        ],
+        "discount": [
+          "折扣",
+          "折扣金额",
+          "优惠",
+          "优惠金额",
+          "减额",
+          "discount",
+          "discount_amount",
+          "coupon",
+          "优惠券",
+          "减免",
+          "折让"
+        ],
+        "cost": [
+          "成本",
+          "费用成本",
+          "支出成本",
+          "cost",
+          "expense",
+          "cost_price",
+          "进货价",
+          "采购成本",
+          "运营成本"
+        ],
+        "quantity": [
+          "数量",
+          "件数",
+          "销量",
+          "个数",
+          "笔数",
+          "人次",
+          "频次",
+          "次数",
+          "quantity",
+          "qty",
+          "count",
+          "人数",
+          "单数"
+        ],
+        "items_purchased": [
+          "购买件数",
+          "购买数量",
+          "商品件数",
+          "items_purchased",
+          "items_count",
+          "num_items",
+          "商品数量",
+          "购买量"
+        ],
+        "customer_id": [
+          "客户ID",
+          "顾客ID",
+          "会员ID",
+          "用户ID",
+          "customer_id",
+          "cust_id",
+          "user_id",
+          "客户编号",
+          "会员号"
+        ],
+        "membership_type": [
+          "会员类型",
+          "会员等级",
+          "会员级别",
+          "客户等级",
+          "membership_type",
+          "membership_level",
+          "vip_level",
+          "customer_tier",
+          "用户等级",
+          "vip等级"
+        ],
+        "satisfaction_level": [
+          "满意度",
+          "满意程度",
+          "评分",
+          "satisfaction_level",
+          "satisfaction_score",
+          "rating",
+          "customer_satisfaction",
+          "客户满意度",
+          "服务评分"
+        ],
+        "average_rating": [
+          "平均评分",
+          "平均分",
+          "均分",
+          "average_rating",
+          "avg_rating",
+          "mean_score",
+          "评分均值",
+          "综合均分"
+        ],
+        "days_since_last_purchase": [
+          "距上次购买天数",
+          "上次购买距今",
+          "days_since_last_purchase",
+          "recency",
+          "days_since_purchase",
+          "距上次消费",
+          "购买间隔"
+        ],
+        "description": [
+          "摘要",
+          "备注",
+          "说明",
+          "描述",
+          "用途",
+          "事由",
+          "description",
+          "remark",
+          "note",
+          "comments",
+          "备注信息",
+          "补充说明"
+        ],
+        "account": [
+          "账户",
+          "账号",
+          "科目代码",
+          "account",
+          "account_id",
+          "acc_no",
+          "账户号"
+        ],
+        "email": [
+          "email",
+          "邮箱",
+          "邮件",
+          "e-mail",
+          "mail",
+          "电子邮箱",
+          "电邮",
+          "Email",
+          "联系邮箱"
+        ],
+        "phone": [
+          "phone",
+          "电话",
+          "手机",
+          "mobile",
+          "tel",
+          "telephone",
+          "手机号",
+          "联系电话",
+          "联系方式",
+          "联系手机"
+        ],
+        "country": [
+          "国家",
+          "国籍",
+          "country",
+          "nation",
+          "国别",
+          "所属国家"
+        ],
+        "order_id": [
+          "订单ID",
+          "订单号",
+          "order_id",
+          "order_no",
+          "ord_id",
+          "交易号",
+          "订单编号",
+          "流水号"
+        ],
+        "payment_method": [
+          "支付方式",
+          "付款方式",
+          "payment_method",
+          "pay_method",
+          "付款类型",
+          "结算方式"
+        ],
+        "shipping_method": [
+          "配送方式",
+          "物流方式",
+          "运输方式",
+          "shipping_method",
+          "ship_method",
+          "快递方式",
+          "配送类型"
+        ],
+        "tax": [
+          "税费",
+          "税额",
+          "税金",
+          "税率",
+          "tax",
+          "tax_amount",
+          "vat",
+          "增值税",
+          "营业税"
+        ],
+        "stock": [
+          "库存",
+          "库存量",
+          "存货",
+          "存量",
+          "stock",
+          "inventory",
+          "库存数量",
+          "现有库存"
+        ],
+        "unit_price": [
+          "单价",
+          "单品价格",
+          "单价金额",
+          "unit_price",
+          "price_per_unit",
+          "售价",
+          "商品单价",
+          "单个价格"
+        ],
+        "return_rate": [
+          "退货率",
+          "退货量",
+          "退款率",
+          "return_rate",
+          "refund_rate",
+          "退货比例",
+          "退单率"
+        ],
+        "exchange_rate": [
+          "汇率",
+          "兑换率",
+          "折算率",
+          "exchange_rate",
+          "fx_rate",
+          "换算率",
+          "汇率值"
+        ],
+        "segment": [
+          "细分",
+          "分层",
+          "segment",
+          "segmentation",
+          "客群",
+          "用户分层",
+          "市场细分"
+        ],
+        "industry": [
+          "行业",
+          "产业",
+          "industry",
+          "sector",
+          "所属行业",
+          "行业类别",
+          "行业分类"
+        ]
+      },
+      "fill_strategies": {
+        "date": {
+          "method": "ffill"
+        },
+        "order_date": {
+          "method": "ffill"
+        },
+        "payment_time": {
+          "method": "ffill"
+        },
+        "submit_time": {
+          "method": "ffill"
+        },
+        "ship_date": {
+          "method": "ffill"
+        },
+        "region": {
+          "method": "mode",
+          "fallback": "未知"
+        },
+        "category": {
+          "method": "mode",
+          "fallback": "其他"
+        },
+        "name": {
+          "method": "mode",
+          "fallback": "未知"
+        },
+        "department": {
+          "method": "mode",
+          "fallback": "未分配"
+        },
+        "channel": {
+          "method": "mode",
+          "fallback": "其他"
+        },
+        "status": {
+          "method": "mode",
+          "fallback": "未知"
+        },
+        "gender": {
+          "method": "mode",
+          "fallback": "未知"
+        },
+        "age": {
+          "method": "median",
+          "fallback": 0
+        },
+        "amount": {
+          "method": "median",
+          "fallback": 0
+        },
+        "sales": {
+          "method": "median",
+          "fallback": 0
+        },
+        "total_amount": {
+          "method": "median",
+          "fallback": 0
+        },
+        "profit": {
+          "method": "median",
+          "fallback": 0
+        },
+        "discount": {
+          "method": "median",
+          "fallback": 0
+        },
+        "cost": {
+          "method": "median",
+          "fallback": 0
+        },
+        "quantity": {
+          "method": "median",
+          "fallback": 1
+        },
+        "items_purchased": {
+          "method": "median",
+          "fallback": 1
+        },
+        "membership_type": {
+          "method": "mode",
+          "fallback": "普通会员"
+        },
+        "satisfaction_level": {
+          "method": "median",
+          "fallback": 3
+        },
+        "average_rating": {
+          "method": "median",
+          "fallback": 3
+        },
+        "days_since_last_purchase": {
+          "method": "median",
+          "fallback": 999
+        },
+        "description": {
+          "method": "specific",
+          "value": ""
+        },
+        "account": {
+          "method": "mode",
+          "fallback": "未知"
+        },
+        "email": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "phone": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "country": {
+          "method": "mode",
+          "fallback": "未知"
+        },
+        "order_id": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "payment_method": {
+          "method": "mode",
+          "fallback": "其他"
+        },
+        "shipping_method": {
+          "method": "mode",
+          "fallback": "其他"
+        },
+        "tax": {
+          "method": "median",
+          "fallback": 0
+        },
+        "stock": {
+          "method": "median",
+          "fallback": 0
+        },
+        "unit_price": {
+          "method": "median",
+          "fallback": 0
+        },
+        "return_rate": {
+          "method": "median",
+          "fallback": 0
+        },
+        "exchange_rate": {
+          "method": "median",
+          "fallback": 1
+        },
+        "segment": {
+          "method": "mode",
+          "fallback": "未分类"
+        },
+        "industry": {
+          "method": "mode",
+          "fallback": "其他"
+        },
+        "customer_id": {
+          "method": "mode",
+          "fallback": ""
+        }
+      },
+      "charts": [
+        "table",
+        "bar",
+        "line",
+        "pie",
+        "scatter",
+        "heatmap",
+        "radar",
+        "treemap"
+      ]
+    },
+    "finance": {
+      "name": "金融财务",
+      "description": "企业财务数据、收支流水、成本核算、预算分析",
+      "field_mappings": {
+        "date": [
+          "日期",
+          "时间",
+          "date",
+          "time",
+          "datetime",
+          "timestamp",
+          "交易日期",
+          "记账日期",
+          "发生日期",
+          "入账日期",
+          "year",
+          "month",
+          "day",
+          "period"
+        ],
+        "account": [
+          "账户",
+          "账号",
+          "科目代码",
+          "会计科目",
+          "account",
+          "account_id",
+          "acc_no",
+          "科目",
+          "账户号",
+          "科目编号"
+        ],
+        "category": [
+          "分类",
+          "类别",
+          "科目",
+          "费用类型",
+          "收支类型",
+          "项目",
+          "科目名称",
+          "category",
+          "type",
+          "科目大类",
+          "费用科目"
+        ],
+        "department": [
+          "部门",
+          "单位",
+          "机构",
+          "department",
+          "dept",
+          "成本中心",
+          "事业部",
+          "归属部门",
+          "核算部门",
+          "责任中心"
+        ],
+        "description": [
+          "摘要",
+          "备注",
+          "说明",
+          "描述",
+          "用途",
+          "事由",
+          "description",
+          "remark",
+          "note",
+          "凭证摘要",
+          "业务摘要"
+        ],
+        "amount": [
+          "金额",
+          "费用",
+          "支出",
+          "收入",
+          "交易金额",
+          "发生额",
+          "总金额",
+          "amount",
+          "total",
+          "value",
+          "price",
+          "cost",
+          "借方金额",
+          "贷方金额",
+          "本币金额"
+        ],
+        "sales": [
+          "销售额",
+          "销售收入",
+          "主营业务收入",
+          "sales",
+          "revenue",
+          "营业收入",
+          "销售总额",
+          "营业总收入"
+        ],
+        "profit": [
+          "利润",
+          "净利润",
+          "毛利润",
+          "profit",
+          "net_profit",
+          "gross_profit",
+          "盈利",
+          "收益",
+          "经营利润",
+          "利润总额"
+        ],
+        "cost": [
+          "成本",
+          "费用",
+          "支出",
+          "cost",
+          "expense",
+          "主营业务成本",
+          "营业成本",
+          "期间费用"
+        ],
+        "discount": [
+          "折扣",
+          "折让",
+          "折扣金额",
+          "discount",
+          "discount_amount",
+          "商业折扣",
+          "现金折扣",
+          "销售折扣"
+        ],
+        "tax": [
+          "税费",
+          "税额",
+          "税金",
+          "税率",
+          "tax",
+          "tax_amount",
+          "vat",
+          "增值税",
+          "所得税",
+          "营业税",
+          "附加税",
+          "应交税费"
+        ],
+        "fee": [
+          "手续费",
+          "服务费",
+          "管理费",
+          "fee",
+          "commission",
+          "手续费收入",
+          "手续费支出",
+          "佣金",
+          "渠道费"
+        ],
+        "exchange_rate": [
+          "汇率",
+          "兑换率",
+          "折算率",
+          "exchange_rate",
+          "fx_rate",
+          "汇率值",
+          "折算汇率",
+          "期末汇率"
+        ],
+        "fiscal_year": [
+          "财年",
+          "会计年度",
+          "财政年度",
+          "fiscal_year",
+          "fy",
+          "会计年",
+          "预算年度"
+        ],
+        "fiscal_quarter": [
+          "季度",
+          "会计季度",
+          "fiscal_quarter",
+          "quarter",
+          "qtr",
+          "季",
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4"
+        ],
+        "budget": [
+          "预算",
+          "预算金额",
+          "计划金额",
+          "budget",
+          "budget_amount",
+          "预算数",
+          "年度预算",
+          "预算额度"
+        ],
+        "forecast": [
+          "预测",
+          "预测值",
+          "预估",
+          "forecast",
+          "forecast_amount",
+          "预计数",
+          "滚动预测"
+        ],
+        "variance": [
+          "差异",
+          "差额",
+          "偏差",
+          "variance",
+          "diff",
+          "差异额",
+          "预算差异",
+          "偏差值"
+        ],
+        "debit": [
+          "借方",
+          "借",
+          "debit",
+          "dr",
+          "借方余额",
+          "借记金额"
+        ],
+        "credit": [
+          "贷方",
+          "贷",
+          "credit",
+          "cr",
+          "贷方余额",
+          "贷记金额"
+        ],
+        "balance": [
+          "余额",
+          "余额金额",
+          "balance",
+          "期初余额",
+          "期末余额",
+          "账面余额"
+        ],
+        "reconciliation_status": [
+          "对账状态",
+          "核对状态",
+          "reconciliation_status",
+          "对账结果",
+          "账实核对",
+          "reconciled"
+        ],
+        "approval_status": [
+          "审批状态",
+          "审批结果",
+          "approval_status",
+          "审批标志",
+          "审核状态",
+          "是否审批"
+        ],
+        "audit_flag": [
+          "审计标志",
+          "审计标记",
+          "audit_flag",
+          "已审计",
+          "审计状态",
+          "is_audited"
+        ],
+        "region": [
+          "地区",
+          "区域",
+          "省份",
+          "城市",
+          "region",
+          "city",
+          "country",
+          "核算地",
+          "营业地",
+          "注册地"
+        ],
+        "channel": [
+          "渠道",
+          "来源",
+          "channel",
+          "source",
+          "销售渠道",
+          "收入渠道",
+          "获客渠道"
+        ],
+        "submit_time": [
+          "提交时间",
+          "申请时间",
+          "submit_time",
+          "submitted_at",
+          "创建时间",
+          "录入时间",
+          "制单时间"
+        ],
+        "payment_time": [
+          "支付时间",
+          "付款时间",
+          "payment_time",
+          "pay_time",
+          "paid_at",
+          "结算时间",
+          "付款日期"
+        ],
+        "customer_id": [
+          "客户ID",
+          "客户编号",
+          "customer_id",
+          "cust_id",
+          "客商编号",
+          "往来单位",
+          "交易对手"
+        ],
+        "order_id": [
+          "单据号",
+          "凭证号",
+          "票据号",
+          "order_id",
+          "order_no",
+          "voucher_no",
+          "凭证编号",
+          "发票号"
+        ],
+        "currency_type": [
+          "币种",
+          "货币类型",
+          "currency",
+          "currency_type",
+          "币别",
+          "记账本位币",
+          "原币"
+        ]
+      },
+      "fill_strategies": {
+        "date": {
+          "method": "ffill"
+        },
+        "submit_time": {
+          "method": "ffill"
+        },
+        "payment_time": {
+          "method": "ffill"
+        },
+        "account": {
+          "method": "mode",
+          "fallback": "未知"
+        },
+        "category": {
+          "method": "mode",
+          "fallback": "其他"
+        },
+        "department": {
+          "method": "mode",
+          "fallback": "未分配"
+        },
+        "description": {
+          "method": "specific",
+          "value": ""
+        },
+        "amount": {
+          "method": "median",
+          "fallback": 0
+        },
+        "sales": {
+          "method": "median",
+          "fallback": 0
+        },
+        "profit": {
+          "method": "median",
+          "fallback": 0
+        },
+        "cost": {
+          "method": "median",
+          "fallback": 0
+        },
+        "discount": {
+          "method": "median",
+          "fallback": 0
+        },
+        "tax": {
+          "method": "median",
+          "fallback": 0
+        },
+        "fee": {
+          "method": "median",
+          "fallback": 0
+        },
+        "exchange_rate": {
+          "method": "median",
+          "fallback": 1
+        },
+        "fiscal_year": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "fiscal_quarter": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "budget": {
+          "method": "median",
+          "fallback": 0
+        },
+        "forecast": {
+          "method": "median",
+          "fallback": 0
+        },
+        "variance": {
+          "method": "median",
+          "fallback": 0
+        },
+        "balance": {
+          "method": "median",
+          "fallback": 0
+        },
+        "reconciliation_status": {
+          "method": "mode",
+          "fallback": "未对账"
+        },
+        "approval_status": {
+          "method": "mode",
+          "fallback": "待审批"
+        },
+        "audit_flag": {
+          "method": "mode",
+          "fallback": "未审计"
+        },
+        "region": {
+          "method": "mode",
+          "fallback": "未知"
+        },
+        "channel": {
+          "method": "mode",
+          "fallback": "其他"
+        },
+        "debit": {
+          "method": "median",
+          "fallback": 0
+        },
+        "credit": {
+          "method": "median",
+          "fallback": 0
+        },
+        "customer_id": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "order_id": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "currency_type": {
+          "method": "mode",
+          "fallback": "CNY"
+        }
+      },
+      "charts": [
+        "table",
+        "bar",
+        "line",
+        "pie",
+        "scatter",
+        "heatmap",
+        "radar",
+        "treemap"
+      ]
+    },
+    "ecommerce": {
+      "name": "电商零售",
+      "description": "电商平台订单、商品销售、客户行为、营销效果分析",
+      "field_mappings": {
+        "date": [
+          "日期",
+          "时间",
+          "date",
+          "time",
+          "datetime",
+          "timestamp",
+          "year",
+          "month",
+          "day"
+        ],
+        "order_date": [
+          "下单日期",
+          "订购日期",
+          "订单日期",
+          "下单时间",
+          "order_date",
+          "order_time",
+          "ord_date",
+          "购买日期",
+          "消费日期"
+        ],
+        "payment_time": [
+          "支付时间",
+          "付款时间",
+          "付款日期",
+          "payment_time",
+          "pay_time",
+          "paid_at",
+          "payment_date",
+          "交易时间",
+          "付款完成时间"
+        ],
+        "ship_date": [
+          "发货日期",
+          "发运日期",
+          "发货时间",
+          "ship_date",
+          "shipped_at",
+          "shipping_date",
+          "出库日期"
+        ],
+        "delivery_date": [
+          "送达日期",
+          "签收日期",
+          "收货日期",
+          "delivery_date",
+          "received_date",
+          "配送完成日"
+        ],
+        "region": [
+          "地区",
+          "省份",
+          "城市",
+          "收货地区",
+          "所在地区",
+          "region",
+          "city",
+          "省",
+          "市",
+          "区",
+          "address",
+          "location",
+          "收货地",
+          "目的地"
+        ],
+        "category": [
+          "商品分类",
+          "类目",
+          "品类",
+          "一级类目",
+          "商品类目",
+          "category",
+          "product_category",
+          "商品类型",
+          "品类名称"
+        ],
+        "channel": [
+          "渠道",
+          "来源",
+          "平台",
+          "下单渠道",
+          "流量来源",
+          "channel",
+          "source",
+          "平台来源",
+          "推广渠道",
+          "入口渠道"
+        ],
+        "name": [
+          "商品名称",
+          "商品名",
+          "产品",
+          "标题",
+          "name",
+          "product",
+          "product_name",
+          "title",
+          "商品标题",
+          "宝贝名称"
+        ],
+        "amount": [
+          "单价",
+          "售价",
+          "单品价格",
+          "商品单价",
+          "price",
+          "unit_price",
+          "单品售价",
+          "零售价",
+          "标价",
+          "原价"
+        ],
+        "total_amount": [
+          "总金额",
+          "订单金额",
+          "实付金额",
+          "成交金额",
+          "金额",
+          "total",
+          "amount",
+          "total_amount",
+          "订单总额",
+          "付款金额"
+        ],
+        "sales": [
+          "销售额",
+          "销售收入",
+          "销售金额",
+          "sales",
+          "revenue",
+          "营业额",
+          "销售总额",
+          "总销售额",
+          "GMV"
+        ],
+        "profit": [
+          "利润",
+          "净利润",
+          "毛利润",
+          "profit",
+          "net_profit",
+          "gross_profit",
+          "毛利",
+          "单均利润",
+          "利润额"
+        ],
+        "discount": [
+          "折扣",
+          "折扣金额",
+          "优惠",
+          "优惠金额",
+          "discount",
+          "discount_amount",
+          "coupon_amount",
+          "优惠券",
+          "减免金额",
+          "满减"
+        ],
+        "cost": [
+          "成本",
+          "进货成本",
+          "商品成本",
+          "cost",
+          "cost_price",
+          "采购价",
+          "成本价",
+          "进货价"
+        ],
+        "quantity": [
+          "数量",
+          "件数",
+          "销量",
+          "购买数量",
+          "下单数量",
+          "quantity",
+          "qty",
+          "count",
+          "件",
+          "下单件数"
+        ],
+        "items_purchased": [
+          "购买件数",
+          "商品件数",
+          "购买量",
+          "items_purchased",
+          "items_count",
+          "num_items",
+          "购买商品数"
+        ],
+        "customer_id": [
+          "客户ID",
+          "顾客ID",
+          "会员ID",
+          "用户ID",
+          "customer_id",
+          "cust_id",
+          "user_id",
+          "买家ID",
+          "客户编号",
+          "买家编号"
+        ],
+        "membership_type": [
+          "会员类型",
+          "会员等级",
+          "会员级别",
+          "客户等级",
+          "membership_type",
+          "membership_level",
+          "vip_level",
+          "customer_tier",
+          "用户等级",
+          "vip等级",
+          "会员卡"
+        ],
+        "satisfaction_level": [
+          "满意度",
+          "满意程度",
+          "评分",
+          "satisfaction_level",
+          "satisfaction_score",
+          "rating",
+          "评价分",
+          "用户满意度",
+          "客户评分"
+        ],
+        "average_rating": [
+          "平均评分",
+          "平均分",
+          "均分",
+          "average_rating",
+          "avg_rating",
+          "mean_score",
+          "商品评分",
+          "店铺评分",
+          "DSR"
+        ],
+        "days_since_last_purchase": [
+          "距上次购买天数",
+          "上次购买距今",
+          "days_since_last_purchase",
+          "recency",
+          "days_since_purchase",
+          "最近一次购买",
+          "购买间隔",
+          "回购间隔"
+        ],
+        "return_rate": [
+          "退货率",
+          "退款率",
+          "return_rate",
+          "refund_rate",
+          "退货比例",
+          "退货占比",
+          "退单率",
+          "退款比例"
+        ],
+        "order_id": [
+          "订单ID",
+          "订单号",
+          "order_id",
+          "order_no",
+          "ord_id",
+          "交易号",
+          "订单编号",
+          "交易编号",
+          "主订单号"
+        ],
+        "payment_method": [
+          "支付方式",
+          "付款方式",
+          "payment_method",
+          "pay_method",
+          "付款类型",
+          "结算方式",
+          "支付渠道"
+        ],
+        "shipping_method": [
+          "配送方式",
+          "物流方式",
+          "快递方式",
+          "shipping_method",
+          "ship_method",
+          "配送类型",
+          "发货方式",
+          "快递公司"
+        ],
+        "stock": [
+          "库存",
+          "库存量",
+          "存货量",
+          "stock",
+          "inventory",
+          "库存数量",
+          "现有库存",
+          "可售库存"
+        ],
+        "tax": [
+          "税费",
+          "税额",
+          "税金",
+          "tax",
+          "tax_amount",
+          "vat",
+          "增值税",
+          "消费税",
+          "进口税"
+        ],
+        "click_count": [
+          "点击量",
+          "点击次数",
+          "点击率",
+          "click_count",
+          "clicks",
+          "浏览数",
+          "PV",
+          "页面浏览"
+        ],
+        "conversion_rate": [
+          "转化率",
+          "成交率",
+          "conversion_rate",
+          "cvr",
+          "转化比例",
+          "下单转化率",
+          "支付转化率"
+        ],
+        "traffic_source": [
+          "流量来源",
+          "访客来源",
+          "traffic_source",
+          "traffic_channel",
+          "访客渠道",
+          "流量渠道"
+        ],
+        "device_type": [
+          "设备类型",
+          "终端类型",
+          "device_type",
+          "device",
+          "设备",
+          "客户端",
+          "PC",
+          "Mobile",
+          "App"
+        ],
+        "session_count": [
+          "访问次数",
+          "会话数",
+          "session_count",
+          "sessions",
+          "访问量",
+          "UV",
+          "访客数"
+        ],
+        "cart_abandon_rate": [
+          "购物车放弃率",
+          "加购未付率",
+          "cart_abandon_rate",
+          "abandon_rate",
+          "放弃率"
+        ],
+        "gender": [
+          "性别",
+          "gender",
+          "sex",
+          "男",
+          "女"
+        ],
+        "age": [
+          "年龄",
+          "周岁",
+          "age",
+          "购客年龄",
+          "年龄段"
+        ]
+      },
+      "fill_strategies": {
+        "date": {
+          "method": "ffill"
+        },
+        "order_date": {
+          "method": "ffill"
+        },
+        "payment_time": {
+          "method": "ffill"
+        },
+        "ship_date": {
+          "method": "ffill"
+        },
+        "delivery_date": {
+          "method": "ffill"
+        },
+        "region": {
+          "method": "mode",
+          "fallback": "未知地区"
+        },
+        "category": {
+          "method": "mode",
+          "fallback": "未分类"
+        },
+        "channel": {
+          "method": "mode",
+          "fallback": "其他渠道"
+        },
+        "name": {
+          "method": "mode",
+          "fallback": "未知商品"
+        },
+        "amount": {
+          "method": "median",
+          "fallback": 0
+        },
+        "total_amount": {
+          "method": "median",
+          "fallback": 0
+        },
+        "sales": {
+          "method": "median",
+          "fallback": 0
+        },
+        "profit": {
+          "method": "median",
+          "fallback": 0
+        },
+        "discount": {
+          "method": "median",
+          "fallback": 0
+        },
+        "cost": {
+          "method": "median",
+          "fallback": 0
+        },
+        "quantity": {
+          "method": "median",
+          "fallback": 1
+        },
+        "items_purchased": {
+          "method": "median",
+          "fallback": 1
+        },
+        "customer_id": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "membership_type": {
+          "method": "mode",
+          "fallback": "普通会员"
+        },
+        "satisfaction_level": {
+          "method": "median",
+          "fallback": 3
+        },
+        "average_rating": {
+          "method": "median",
+          "fallback": 3
+        },
+        "days_since_last_purchase": {
+          "method": "median",
+          "fallback": 999
+        },
+        "return_rate": {
+          "method": "median",
+          "fallback": 0
+        },
+        "order_id": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "payment_method": {
+          "method": "mode",
+          "fallback": "其他"
+        },
+        "shipping_method": {
+          "method": "mode",
+          "fallback": "其他"
+        },
+        "stock": {
+          "method": "median",
+          "fallback": 0
+        },
+        "tax": {
+          "method": "median",
+          "fallback": 0
+        },
+        "click_count": {
+          "method": "median",
+          "fallback": 0
+        },
+        "conversion_rate": {
+          "method": "median",
+          "fallback": 0
+        },
+        "traffic_source": {
+          "method": "mode",
+          "fallback": "其他"
+        },
+        "device_type": {
+          "method": "mode",
+          "fallback": "未知"
+        },
+        "session_count": {
+          "method": "median",
+          "fallback": 0
+        },
+        "cart_abandon_rate": {
+          "method": "median",
+          "fallback": 0
+        },
+        "gender": {
+          "method": "mode",
+          "fallback": "未知"
+        },
+        "age": {
+          "method": "median",
+          "fallback": 0
+        }
+      },
+      "charts": [
+        "table",
+        "bar",
+        "line",
+        "pie",
+        "scatter",
+        "heatmap",
+        "radar",
+        "treemap"
+      ]
+    },
+    "logistics": {
+      "name": "物流运输",
+      "description": "物流运单、运输成本、时效分析、路线管理",
+      "field_mappings": {
+        "date": [
+          "日期",
+          "时间",
+          "date",
+          "time",
+          "datetime",
+          "timestamp",
+          "运输日期",
+          "发运日期",
+          "揽收日期"
+        ],
+        "ship_date": [
+          "发货日期",
+          "发运日期",
+          "起运日期",
+          "ship_date",
+          "dispatch_date",
+          "发运时间",
+          "启运日",
+          "出发日"
+        ],
+        "delivery_date": [
+          "送达日期",
+          "签收日期",
+          "到货日期",
+          "delivery_date",
+          "arrival_date",
+          "到达日",
+          "收货日"
+        ],
+        "order_date": [
+          "下单日期",
+          "接单日期",
+          "order_date",
+          "booking_date",
+          "订仓日期",
+          "委托日期"
+        ],
+        "region": [
+          "始发地",
+          "发货地",
+          "出发城市",
+          "起运地",
+          "from",
+          "origin",
+          "source_city",
+          "origin_city",
+          "起源地"
+        ],
+        "destination": [
+          "目的地",
+          "收货地",
+          "到达城市",
+          "to",
+          "destination",
+          "dest_city",
+          "target_city",
+          "目的城市",
+          "到达地"
+        ],
+        "name": [
+          "承运商",
+          "物流公司",
+          "快递公司",
+          "运输方",
+          "配送方",
+          "carrier",
+          "carrier_name",
+          "承运人",
+          "物流商",
+          "运输单位"
+        ],
+        "status": [
+          "状态",
+          "运输状态",
+          "物流状态",
+          "签收状态",
+          "配送状态",
+          "status",
+          "运单状态",
+          "当前状态",
+          "在途状态"
+        ],
+        "amount": [
+          "重量",
+          "计费重量",
+          "weight",
+          "kg",
+          "gross_weight",
+          "net_weight",
+          "实际重量",
+          "体积重量",
+          "毛重",
+          "净重"
+        ],
+        "cost": [
+          "运费",
+          "运输费用",
+          "物流费用",
+          "费用",
+          "金额",
+          "cost",
+          "freight",
+          "amount",
+          "运输成本",
+          "运费金额"
+        ],
+        "quantity": [
+          "距离",
+          "里程",
+          "运输距离",
+          "配送距离",
+          "distance",
+          "km",
+          "公里",
+          "运输里程",
+          "配送里程"
+        ],
+        "delivery_days": [
+          "时效",
+          "运输天数",
+          "配送天数",
+          "耗时",
+          "在途天数",
+          "天数",
+          "delivery_days",
+          "运输时长",
+          "配送时长"
+        ],
+        "fuel_cost": [
+          "燃油费",
+          "燃料费用",
+          "燃料成本",
+          "fuel_cost",
+          "oil_cost",
+          "燃油附加费",
+          "耗油成本"
+        ],
+        "toll_cost": [
+          "过路费",
+          "通行费",
+          "路桥费",
+          "toll_cost",
+          "toll_fee",
+          "高速费",
+          "道路费"
+        ],
+        "labor_cost": [
+          "人工费",
+          "人力成本",
+          "劳务费",
+          "labor_cost",
+          "manpower_cost",
+          "人工成本",
+          "装卸费",
+          "搬运费"
+        ],
+        "cargo_volume": [
+          "体积",
+          "货量",
+          "体积重量",
+          "cargo_volume",
+          "volume",
+          "cbm",
+          "立方米",
+          "方数"
+        ],
+        "delay_days": [
+          "延误天数",
+          "延迟天数",
+          "delay_days",
+          "late_days",
+          "延误时长",
+          "逾期天数"
+        ],
+        "delivery_status": [
+          "配送状态",
+          "递送状态",
+          "delivery_status",
+          "派送状态",
+          "配送环节"
+        ],
+        "tracking_number": [
+          "运单号",
+          "追踪号",
+          "快递号",
+          "tracking_number",
+          "tracking_no",
+          "运单编号",
+          "快递单号",
+          "物流编号"
+        ],
+        "order_id": [
+          "订单号",
+          "订单编号",
+          "order_id",
+          "order_no",
+          "关联订单",
+          "参考号"
+        ],
+        "customer_id": [
+          "客户ID",
+          "客户编号",
+          "customer_id",
+          "cust_id",
+          "发货人",
+          "收货人ID"
+        ],
+        "vehicle_id": [
+          "车辆ID",
+          "车牌号",
+          "车号",
+          "vehicle_id",
+          "car_id",
+          "车辆编号",
+          "车牌"
+        ],
+        "driver_id": [
+          "司机ID",
+          "驾驶员ID",
+          "driver_id",
+          "司编号",
+          "驾驶员号"
+        ],
+        "ship_time": [
+          "发运时间",
+          "起运时间",
+          "出发时间",
+          "ship_time",
+          "departure_time",
+          "离开始间"
+        ],
+        "arrival_time": [
+          "到达时间",
+          "抵达时间",
+          "到货时间",
+          "arrival_time",
+          "reach_time",
+          "签收时间"
+        ],
+        "temperature": [
+          "温度",
+          "仓储温度",
+          "运输温度",
+          "temperature",
+          "temp",
+          "℃",
+          "温度℃"
+        ],
+        "humidity": [
+          "湿度",
+          "相对湿度",
+          "humidity",
+          "rh",
+          "湿度%",
+          "仓储湿度"
+        ],
+        "warehouse": [
+          "仓库",
+          "仓储地",
+          "warehouse",
+          "depot",
+          "库房",
+          "仓储中心",
+          "始发仓",
+          "目的仓"
+        ],
+        "route_id": [
+          "路线ID",
+          "线路编号",
+          "route_id",
+          "route_no",
+          "线路",
+          "运输路线"
+        ]
+      },
+      "fill_strategies": {
+        "date": {
+          "method": "ffill"
+        },
+        "ship_date": {
+          "method": "ffill"
+        },
+        "delivery_date": {
+          "method": "ffill"
+        },
+        "order_date": {
+          "method": "ffill"
+        },
+        "ship_time": {
+          "method": "ffill"
+        },
+        "arrival_time": {
+          "method": "ffill"
+        },
+        "region": {
+          "method": "mode",
+          "fallback": "未知"
+        },
+        "destination": {
+          "method": "mode",
+          "fallback": "未知"
+        },
+        "name": {
+          "method": "mode",
+          "fallback": "其他"
+        },
+        "status": {
+          "method": "mode",
+          "fallback": "未知状态"
+        },
+        "amount": {
+          "method": "median",
+          "fallback": 0
+        },
+        "cost": {
+          "method": "median",
+          "fallback": 0
+        },
+        "quantity": {
+          "method": "median",
+          "fallback": 0
+        },
+        "delivery_days": {
+          "method": "median",
+          "fallback": 0
+        },
+        "fuel_cost": {
+          "method": "median",
+          "fallback": 0
+        },
+        "toll_cost": {
+          "method": "median",
+          "fallback": 0
+        },
+        "labor_cost": {
+          "method": "median",
+          "fallback": 0
+        },
+        "cargo_volume": {
+          "method": "median",
+          "fallback": 0
+        },
+        "delay_days": {
+          "method": "median",
+          "fallback": 0
+        },
+        "delivery_status": {
+          "method": "mode",
+          "fallback": "未知"
+        },
+        "tracking_number": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "order_id": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "customer_id": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "vehicle_id": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "driver_id": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "temperature": {
+          "method": "median",
+          "fallback": 0
+        },
+        "humidity": {
+          "method": "median",
+          "fallback": 0
+        },
+        "warehouse": {
+          "method": "mode",
+          "fallback": "未知"
+        },
+        "route_id": {
+          "method": "mode",
+          "fallback": ""
+        }
+      },
+      "charts": [
+        "table",
+        "bar",
+        "line",
+        "pie",
+        "scatter",
+        "heatmap",
+        "radar",
+        "treemap"
+      ]
+    },
+    "healthcare": {
+      "name": "医疗健康",
+      "description": "患者就诊、诊疗费用、疾病分析、药品管理",
+      "field_mappings": {
+        "date": [
+          "日期",
+          "时间",
+          "date",
+          "time",
+          "datetime",
+          "timestamp",
+          "就诊日期",
+          "入院日期",
+          "出院日期",
+          "visit_date",
+          "admission_date",
+          "discharge_date"
+        ],
+        "age": [
+          "年龄",
+          "周岁",
+          "age",
+          "patient_age",
+          "患者年龄",
+          "实足年龄",
+          "岁数"
+        ],
+        "gender": [
+          "性别",
+          "gender",
+          "sex",
+          "患者性别"
+        ],
+        "name": [
+          "诊断",
+          "疾病",
+          "病症",
+          "diagnosis",
+          "诊断名称",
+          "诊断结果",
+          "疾病名称",
+          "病种",
+          "初步诊断"
+        ],
+        "department": [
+          "科室",
+          "就诊科室",
+          "住院科室",
+          "挂号科室",
+          "department",
+          "dept",
+          "科室名称",
+          "诊疗科室",
+          "护理单元"
+        ],
+        "cost": [
+          "费用",
+          "医疗费用",
+          "总费用",
+          "住院费用",
+          "诊疗费",
+          "金额",
+          "cost",
+          "amount",
+          "医疗花费",
+          "药费",
+          "检查费"
+        ],
+        "quantity": [
+          "住院天数",
+          "在院天数",
+          "天数",
+          "length_of_stay",
+          "stay_days",
+          "住院时长",
+          "就诊次数"
+        ],
+        "patient_id": [
+          "患者ID",
+          "病人ID",
+          "病历号",
+          "patient_id",
+          "pid",
+          "患者编号",
+          "住院号",
+          "门诊号"
+        ],
+        "admission_date": [
+          "入院日期",
+          "入院时间",
+          "admission_date",
+          "admit_date",
+          "住院日期"
+        ],
+        "discharge_date": [
+          "出院日期",
+          "出院时间",
+          "discharge_date",
+          "dis_date",
+          "离院日期"
+        ],
+        "diagnosis_code": [
+          "诊断编码",
+          "ICD",
+          "诊断代码",
+          "diagnosis_code",
+          "icd_code",
+          "ICD-10",
+          "病种编码"
+        ],
+        "medication": [
+          "药品",
+          "药物",
+          "用药",
+          "medication",
+          "drug",
+          "medicine",
+          "处方药",
+          "药品名称",
+          "药物名称"
+        ],
+        "dosage": [
+          "剂量",
+          "用量",
+          "dosage",
+          "dose",
+          "用药剂量",
+          "给药量",
+          "次用量",
+          "每剂量"
+        ],
+        "frequency": [
+          "频次",
+          "频率",
+          "用药频次",
+          "frequency",
+          "freq",
+          "给药频次",
+          "每日次数",
+          "用药频率"
+        ],
+        "doctor": [
+          "医生",
+          "医师",
+          "主治医生",
+          "doctor",
+          "physician",
+          "主诊医师",
+          "责任医师",
+          "经治医师"
+        ],
+        "nurse": [
+          "护士",
+          "护理人员",
+          "nurse",
+          "主管护士",
+          "责任护士"
+        ],
+        "room": [
+          "病房",
+          "病室",
+          "房间",
+          "room",
+          "ward",
+          "住院病房",
+          "房间号"
+        ],
+        "bed": [
+          "床位",
+          "床号",
+          "bed",
+          "bed_no",
+          "床位号"
+        ],
+        "insurance": [
+          "保险",
+          "医保",
+          "insurance",
+          "insurance_type",
+          "医保类型",
+          "保险类别",
+          "支付方式"
+        ],
+        "blood_type": [
+          "血型",
+          "blood_type",
+          "blood_group",
+          "ABO",
+          "Rh",
+          "血型类别"
+        ],
+        "height": [
+          "身高",
+          "height",
+          "stature",
+          "身高cm",
+          "身长"
+        ],
+        "weight": [
+          "体重",
+          "weight",
+          "body_weight",
+          "体重kg",
+          "体质量"
+        ],
+        "bmi": [
+          "BMI",
+          "体重指数",
+          "身体质量指数",
+          "bmi",
+          "body_mass_index",
+          "体质指数"
+        ],
+        "blood_pressure": [
+          "血压",
+          "blood_pressure",
+          "bp",
+          "收缩压",
+          "舒张压",
+          "血压值",
+          "高压",
+          "低压"
+        ],
+        "heart_rate": [
+          "心率",
+          "heart_rate",
+          "hr",
+          "脉搏",
+          "心率值",
+          "心率bpm"
+        ],
+        "temperature": [
+          "体温",
+          "temperature",
+          "temp",
+          "体温℃",
+          "发热",
+          "体温值"
+        ],
+        "lab_result": [
+          "检验结果",
+          "化验结果",
+          "lab_result",
+          "lab_value",
+          "实验室结果",
+          "检测值",
+          "检查结果"
+        ],
+        "appointment_date": [
+          "预约日期",
+          "挂号日期",
+          "appointment_date",
+          "预约时间",
+          "复诊日期"
+        ],
+        "follow_up_date": [
+          "随访日期",
+          "复查日期",
+          "follow_up_date",
+          "复查时间",
+          "随诊日期",
+          "回访时间"
+        ],
+        "surgery_date": [
+          "手术日期",
+          "手术时间",
+          "surgery_date",
+          "operation_date",
+          "开刀日期"
+        ],
+        "readmission_flag": [
+          "再入院",
+          "再住院",
+          "readmission",
+          "再入院标志",
+          "二次入院",
+          "重复住院"
+        ]
+      },
+      "fill_strategies": {
+        "date": {
+          "method": "ffill"
+        },
+        "admission_date": {
+          "method": "ffill"
+        },
+        "discharge_date": {
+          "method": "ffill"
+        },
+        "appointment_date": {
+          "method": "ffill"
+        },
+        "follow_up_date": {
+          "method": "ffill"
+        },
+        "surgery_date": {
+          "method": "ffill"
+        },
+        "age": {
+          "method": "median",
+          "fallback": 0
+        },
+        "gender": {
+          "method": "mode",
+          "fallback": "未知"
+        },
+        "name": {
+          "method": "mode",
+          "fallback": "其他诊断"
+        },
+        "department": {
+          "method": "mode",
+          "fallback": "其他科室"
+        },
+        "cost": {
+          "method": "median",
+          "fallback": 0
+        },
+        "quantity": {
+          "method": "median",
+          "fallback": 0
+        },
+        "patient_id": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "diagnosis_code": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "medication": {
+          "method": "mode",
+          "fallback": "未知"
+        },
+        "dosage": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "frequency": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "doctor": {
+          "method": "mode",
+          "fallback": "未知"
+        },
+        "nurse": {
+          "method": "mode",
+          "fallback": "未知"
+        },
+        "room": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "bed": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "insurance": {
+          "method": "mode",
+          "fallback": "自费"
+        },
+        "blood_type": {
+          "method": "mode",
+          "fallback": "未知"
+        },
+        "height": {
+          "method": "median",
+          "fallback": 0
+        },
+        "weight": {
+          "method": "median",
+          "fallback": 0
+        },
+        "bmi": {
+          "method": "median",
+          "fallback": 0
+        },
+        "blood_pressure": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "heart_rate": {
+          "method": "median",
+          "fallback": 0
+        },
+        "temperature": {
+          "method": "median",
+          "fallback": 0
+        },
+        "lab_result": {
+          "method": "mode",
+          "fallback": ""
+        },
+        "readmission_flag": {
+          "method": "mode",
+          "fallback": "否"
+        }
+      },
+      "charts": [
+        "table",
+        "bar",
+        "line",
+        "pie",
+        "scatter",
+        "heatmap",
+        "radar",
+        "treemap"
+      ]
+    }
+  }
+}
