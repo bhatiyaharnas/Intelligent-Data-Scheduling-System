@@ -71,14 +71,14 @@ npm install
 
 ### 4. 启动服务
 
-**启动后端**（端口 8011）：
+**启动后端**：
 
 ```bash
 cd backend
 uvicorn main:app --host 0.0.0.0 --port 8011
 ```
 
-**启动前端**（端口 3000）：
+**启动前端**（：
 
 ```bash
 # 新开一个终端，在项目根目录
@@ -152,24 +152,6 @@ VITE_API_URL=http://localhost:8011/api
 ├── package.json
 └── README.md
 ```
-
-## 常见问题
-
-**Q: 启动后端报 `ModuleNotFoundError: No module named 'models'`？**
-
-从 `backend/` 目录启动：`cd backend && uvicorn main:app --host 0.0.0.0 --port 8011`
-
-**Q: 前端报 `Failed to fetch`？**
-
-确保后端已启动，且端口 8011 未被占用。
-
-**Q: 如何切换后端端口？**
-
-启动时修改 `--port` 参数，同时在 `.env` 中设置 `VITE_API_URL` 为对应地址。
-
-**Q: AI 功能需要什么？**
-
-任何一个兼容 OpenAI API 格式的 LLM 服务均可，包括 OpenAI、DeepSeek、通义千问、智谱 GLM 等。
 
 ## 技术栈
 
