@@ -2,6 +2,8 @@
 
 > Intelligent Data Dispatch Engine — an all-in-one platform for data import, profiling, mapping, cleaning, and visualization.
 
+<!-- Uploading "屏幕截图 2026-05-17 224930.png"... -->
+
 ## Features
 
 - **Intelligent Profiling**: Automatically infer data types (numeric/date/text/boolean) and semantic types (email/phone/URL/currency/ID number, etc., covering 35+ types)
