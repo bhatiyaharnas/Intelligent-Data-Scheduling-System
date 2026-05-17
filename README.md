@@ -2,7 +2,15 @@
 
 > Intelligent Data Dispatch Engine — an all-in-one platform for data import, profiling, mapping, cleaning, and visualization.
 
-<!-- Uploading "屏幕截图 2026-05-17 224930.png"... -->
+<img width="2511" height="1352" alt="屏幕截图 2026-05-17 224930" src="https://github.com/user-attachments/assets/eb6a52c8-c97e-45d6-86e8-f95bdc3b7019" />
+
+<img width="2532" height="1371" alt="屏幕截图 2026-05-17 225319" src="https://github.com/user-attachments/assets/5f7fac0e-e08e-4935-a610-81c2058ca28b" />
+
+<img width="2503" height="1360" alt="屏幕截图 2026-05-17 225439" src="https://github.com/user-attachments/assets/dd673ea5-5bb2-4cc9-84ae-2c0523d7d2dc" />
+
+<img width="2530" height="1362" alt="屏幕截图 2026-05-17 225603" src="https://github.com/user-attachments/assets/f19cc984-ed76-4c86-9a9a-f23cfa6b3542" />
+
+<img width="2531" height="1375" alt="屏幕截图 2026-05-17 230001" src="https://github.com/user-attachments/assets/bc575ba8-f603-4eb5-9a5a-36e679b2a61d" />
 
 ## Features
 
